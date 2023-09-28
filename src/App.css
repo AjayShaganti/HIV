@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
-}
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+    scroll-behavior: smooth;
+    background-image: url('Assets/index.png');
+    background-size: 100% 600px;
+    background-repeat: no-repeat;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Custom Scroll Bar */
+::-webkit-scrollbar {
+    width: 8px;
 }
-
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-thumb {
+    background-color: #1A8EFD;
+    border-radius: 4rem;
 }
